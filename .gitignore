@@ -1,0 +1,7 @@
+# Python Virtual Environment
+venv/
+env/
+__pycache__/
+
+# Passwords and Secrets
+.env
