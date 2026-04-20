@@ -1,0 +1,11 @@
+id,company_id,asset_number,name,description,category,purchase_date,purchase_price,residual_value,useful_life_years,depreciation_method,gl_asset_account,gl_depreciation_account,gl_expense_account,status,disposal_date,disposal_amount,accumulated_depreciation,book_value
+4d562ff8-29c0-43c2-91f5-75813fb61fcc,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0002,Desktop Computer x3,,office_equipment,2018-09-06,4299.32,300.00,4,straight_line,1-2000,1-2010,6-2800,fully_depreciated,,,3999.32,300.00
+8088e6cb-99f9-4361-bb4e-516ed60b9144,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0003,Laptop x2,,office_equipment,2021-03-28,3889.32,200.00,4,straight_line,1-2000,1-2010,6-2800,fully_depreciated,,,3689.32,200.00
+ea572016-e841-4e72-a234-30d3dfe2cf32,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0001,POS System,,office_equipment,2020-04-27,6116.36,500.00,5,straight_line,1-2000,1-2010,6-2800,fully_depreciated,,,5616.36,500.00
+06b34a75-e051-48d3-94cc-60939629f72c,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0004,Printer/Scanner,,office_equipment,2021-12-29,1301.87,100.00,5,straight_line,1-2000,1-2010,6-2800,active,,,841.26,460.61
+1b2a120c-85e8-48c4-83f2-f58ddfdd4e0f,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0005,Shop Shelving,,shop_fittings,2019-04-17,11427.00,1000.00,10,straight_line,1-2100,1-2110,6-2800,active,,,6516.75,4910.25
+92115ba7-7083-4073-9a21-92a113ab5dba,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0006,Display Stands,,shop_fittings,2020-06-18,7872.84,500.00,8,straight_line,1-2100,1-2110,6-2800,active,,,4608.00,3264.84
+833675df-1a56-400b-8e61-488cd927a57d,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0007,Counter & Checkout,,shop_fittings,2022-02-01,6293.27,500.00,10,straight_line,1-2100,1-2110,6-2800,active,,,1979.48,4313.79
+6c820673-890c-4c5b-b682-33d431fad939,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0008,Signage,,shop_fittings,2021-01-28,3192.41,0.00,5,straight_line,1-2100,1-2110,6-2800,active,,,2820.13,372.28
+5887f64a-2f4b-49ff-b037-4df784b314be,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0009,Delivery Van,,motor_vehicles,2019-11-28,30290.44,8000.00,8,straight_line,1-2200,1-2210,6-2800,active,,,15556.73,14733.71
+d4ac2358-fb71-4720-861c-16b2f1d5c4a2,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,FA-0010,Security System,,office_equipment,2018-08-19,3883.65,200.00,7,straight_line,1-2000,1-2010,6-2800,active,,,3639.55,244.10
