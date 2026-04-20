@@ -1,0 +1,57 @@
+id,company_id,code,name,account_type,sub_type,description,is_system,is_active,tax_code
+d6556ab6-7e9c-452a-8dc0-ed2d66976abe,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1000,Bank Account - Operating,asset,current_asset,,True,True,BAS Excluded
+618e7604-4051-48a7-9ff3-84f520164fd7,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1010,Bank Account - Savings,asset,current_asset,,True,True,BAS Excluded
+ad28b3f1-9e58-4c2d-9414-8d16534c6a2a,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1100,Accounts Receivable,asset,current_asset,,True,True,BAS Excluded
+374024a6-e9c1-4487-91ee-4bc4f5924db4,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1150,Less Provision for Doubtful Debts,asset,current_asset,,False,True,BAS Excluded
+371e3bdd-89bb-4927-99c8-c49215a3ec90,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1200,Inventory,asset,current_asset,,False,True,BAS Excluded
+f0dc0447-d4b5-4d71-84cb-9fda7c754e7a,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1300,Prepaid Expenses,asset,current_asset,,False,True,BAS Excluded
+96f9d25c-9a96-448a-80d0-8a09e97a2de0,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-1400,GST Receivable,asset,current_asset,,True,True,BAS Excluded
+d38c36c2-36f5-4ccb-b6bc-8198fb6e062d,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2000,Office Equipment,asset,fixed_asset,,False,True,GST
+7d8cc437-0781-4714-a70a-1d54c1dd45c1,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2010,Less Accumulated Depreciation - Office Equipment,asset,fixed_asset,,False,True,BAS Excluded
+558e9645-03dd-4ae5-9983-b76ff4af4ff5,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2100,Shop Fittings,asset,fixed_asset,,False,True,GST
+c3d153ed-d888-460c-9ab3-544b88831a7d,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2110,Less Accumulated Depreciation - Shop Fittings,asset,fixed_asset,,False,True,BAS Excluded
+afb2c98d-b0ce-4468-ab5e-d94bab975f36,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2200,Motor Vehicles,asset,fixed_asset,,False,True,GST
+9510684f-7708-4a27-ad2e-8ec5731fa339,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,1-2210,Less Accumulated Depreciation - Motor Vehicles,asset,fixed_asset,,False,True,BAS Excluded
+3a419430-50fd-4165-8155-058252178012,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1000,Accounts Payable,liability,current_liability,,True,True,BAS Excluded
+fc224d49-924c-4818-8373-81fe87c5c3f8,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1100,GST Payable,liability,current_liability,,True,True,BAS Excluded
+bd208ee6-6e73-4305-ab70-5fa800fe7941,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1200,PAYG Withholding Payable,liability,current_liability,,True,True,BAS Excluded
+947846ac-da86-476c-9b03-948cb4a7b58e,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1300,Superannuation Payable,liability,current_liability,,True,True,BAS Excluded
+3f69342a-12d7-4cfa-a570-6c7e8a88d83c,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1400,Wages Payable,liability,current_liability,,False,True,BAS Excluded
+edccf426-7ef9-4481-875b-34550f9eaaaa,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1500,Accrued Expenses,liability,current_liability,,False,True,BAS Excluded
+a091e328-ee75-4097-91e0-cc859ba9c157,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1600,Revenue Received in Advance,liability,current_liability,,False,True,BAS Excluded
+6679984b-75b5-4748-a95c-6f2f6dd5da11,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1700,Provision for Annual Leave,liability,current_liability,,False,True,BAS Excluded
+cd2ceae2-4411-422d-889e-fa322c70b04b,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-1800,Provision for Long Service Leave,liability,current_liability,,False,True,BAS Excluded
+72b2956d-5f01-48ee-a28f-c41e8d5b1532,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,2-2000,Bank Loan,liability,non_current_liability,,False,True,BAS Excluded
+fabe99e8-2f51-43aa-bf0b-9c42f3c027aa,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,3-1000,Owner's Equity / Share Capital,equity,equity,,True,True,BAS Excluded
+a47f2200-a486-479a-bb0b-a06abe18b96c,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,3-2000,Retained Earnings,equity,equity,,True,True,BAS Excluded
+47ec17c3-81a5-4eb9-aedb-d695fbe089aa,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,3-3000,Current Year Earnings,equity,equity,,True,True,BAS Excluded
+d8ffe272-3b46-45c1-a3d8-4c38d02cdafb,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,3-4000,Drawings,equity,equity,,False,True,BAS Excluded
+ddaf1bc0-a098-4e4c-9c57-97d5f3e62c5a,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,4-1000,Sales Revenue,revenue,operating_revenue,,True,True,GST
+786a315e-441d-42d1-b455-f9229db03f17,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,4-1100,Sales Returns & Allowances,revenue,operating_revenue,,False,True,GST
+2141952c-2a81-48d4-96ca-70489da300e9,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,4-1200,Sales Discounts,revenue,operating_revenue,,False,True,GST
+f4e8a8c9-bd93-4b94-b4fd-c264bcebedea,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,4-2000,Interest Income,revenue,other_revenue,,False,True,GST-Free
+2f8b4ea3-dc02-4f94-9cdb-613b6f312ddd,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,4-3000,Other Income,revenue,other_revenue,,False,True,GST
+6bccd1a6-e359-4a60-9c45-2bfa609b2c17,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,5-1000,Cost of Goods Sold,expense,cogs,,True,True,GST
+7f435588-e8bf-415c-95b5-f95ba45c3e7e,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,5-1100,Freight & Delivery,expense,cogs,,False,True,GST
+f9ae8bd8-8123-435e-a580-f3fe6f31e4c4,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,5-1200,Purchase Returns & Allowances,expense,cogs,,False,True,GST
+8a188932-4508-416d-bc59-fcabb3458aa2,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,5-1300,Inventory Write-offs,expense,cogs,,False,True,BAS Excluded
+5d33b8bd-c295-43fd-8777-2f4c581fb272,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-1000,Salaries & Wages,expense,operating_expense,,True,True,BAS Excluded
+a0b37a77-9ca4-44c8-83b4-707bb83011da,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-1100,Superannuation Expense,expense,operating_expense,,True,True,BAS Excluded
+3c8d6dad-0b2a-4e01-9f10-1cc36d0765a8,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-1200,Workers Compensation,expense,operating_expense,,False,True,BAS Excluded
+777f3a09-9d97-4e00-bd66-4a34a67dace4,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-1300,Staff Training,expense,operating_expense,,False,True,GST
+f0a32089-454b-419f-9320-92f85819db68,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2000,Rent,expense,operating_expense,,False,True,GST
+af385e76-a832-4031-9593-aec928e5f002,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2100,Utilities,expense,operating_expense,,False,True,GST
+43dffaae-bcea-4d7a-bc0a-4aa90b7e1eea,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2200,Insurance,expense,operating_expense,,False,True,GST-Free
+5fcdcff7-8558-4f6d-a27b-5b759bc2d5c6,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2300,Telephone & Internet,expense,operating_expense,,False,True,GST
+6b2b3c97-20f7-440e-acbe-8e18e1ede9f2,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2400,Office Supplies,expense,operating_expense,,False,True,GST
+8fa30ca9-3aab-414c-8d09-8fb916b7f70a,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2500,Advertising & Marketing,expense,operating_expense,,False,True,GST
+97afa5ff-7f79-45d9-b166-8848e7aeb0f9,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2600,Accounting & Legal Fees,expense,operating_expense,,False,True,GST
+d945319c-d46a-4b4c-977e-12ad6b3f170b,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2700,Bank Fees & Charges,expense,operating_expense,,False,True,GST-Free
+3287b1c2-c4c3-4755-8137-d3d0dc4cd36e,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2800,Depreciation Expense,expense,operating_expense,,True,True,BAS Excluded
+96863c05-bd0c-4219-9e7d-8fc2336406d0,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-2900,Motor Vehicle Expenses,expense,operating_expense,,False,True,GST
+3cf04c1f-0ae3-4f29-a4df-2ab42dbcf9a3,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-3000,Repairs & Maintenance,expense,operating_expense,,False,True,GST
+487c0a8a-a4c0-4fba-98d4-7ee54524bcf4,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-3100,Printing & Stationery,expense,operating_expense,,False,True,GST
+043393e2-c5db-41f9-82f1-67dfe775fd36,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-3200,Subscriptions & Memberships,expense,operating_expense,,False,True,GST
+33715a6a-0407-4344-a5d0-73c315acc459,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-3300,Travel & Accommodation,expense,operating_expense,,False,True,GST
+877049fe-cd4d-4ea3-8a3b-f42a0a174b7e,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-3400,Bad Debts,expense,operating_expense,,False,True,BAS Excluded
+99b55a41-ab1c-445a-9486-ef480c44cb57,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,6-9000,Miscellaneous Expense,expense,operating_expense,,False,True,GST

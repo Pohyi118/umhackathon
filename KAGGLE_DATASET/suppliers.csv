@@ -1,0 +1,11 @@
+id,company_id,name,abn,category,payment_terms_days,lead_time_days,status,created_date,contact_name,contact_email,contact_phone
+9a229633-2a36-45d9-a3ab-47b88ddfd2d9,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Miller PLC,55853258980,services,14,20,active,2023-07-01,Jason Fisher,zhangstanley@example.net,(07) 7057 8611
+479148ec-5376-4425-8eac-e0aeb5fd8d72,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,"Lyons, Barker and Wilson",31561949486,stock,30,18,active,2023-07-01,Patrick Andrews,victoria04@example.com,(07) 9844 6773
+881c46d7-0030-433d-98b6-8707d4ab74f0,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Stone-Jennings,35270964405,stock,30,20,active,2023-07-01,Martin Campbell,jeffreyjoseph@example.net,+61-485-530-605
+98b3b0fb-d390-409a-847b-03c8f0e5af20,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Moran-Grant,27344539446,stock,7,10,active,2023-07-01,Lindsay Decker,penacrystal@example.org,07.0278.0598
+9129e173-c0b4-461a-870c-e3e041407dff,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,White and Sons,45094291809,utilities,30,21,active,2023-07-01,Jamie Smith,amber03@example.net,(08)-9393-6196
+87fce213-c65d-4c2a-b022-50f456190f51,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Gardner-Holloway,51882043527,stock,7,12,active,2023-07-01,Robert Peterson,jessica44@example.com,08-0832-3638
+253c0661-a5fe-40c4-816c-b71617422d80,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Brown Ltd,15260171719,utilities,30,6,active,2023-07-01,Miranda Carney,keithmartinez@example.org,+61 478 531 108
+91aad010-5626-4257-9336-1e35fff223f2,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Ingram Group,43268064423,stock,30,5,active,2023-07-01,Maria Woods,cheryl71@example.org,0402 553 367
+72149454-f646-49d7-9d72-86cb89b3ddde,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Tucker-Gomez,76717800150,logistics,7,8,active,2023-07-01,Michael Johnson,abell@example.org,+61-486-758-612
+a65261df-b66a-4ba3-b3ff-390abbdc6d4f,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Thomas and Sons,49338067827,stock,14,3,active,2023-07-01,Matthew Moore,igill@example.net,+61.404.559.498

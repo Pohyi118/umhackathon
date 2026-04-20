@@ -1,0 +1,2899 @@
+{
+    "metadata": {
+        "simulation_type": "Retail_Distribution_Digital_Twin",
+        "currency": "MYR",
+        "tax_structure": "SST"
+    },
+    "workforce": [
+        {
+            "id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12",
+            "department_id": "b4fd80b3-d2f0-4cef-ba97-d5a93a6ec5b5",
+            "first_name": "Cheyenne",
+            "role": "Assistant Manager",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 9188,
+            "projected_epf_rm": 1102.56
+        },
+        {
+            "id": "5197f5d3-738d-4e77-8916-31de3d47080a",
+            "department_id": "9f7a921e-dc39-4c56-bcf0-d96d44d8e310",
+            "first_name": "Suzanne",
+            "role": "Warehouse Associate",
+            "employment_type": "part_time",
+            "monthly_salary_rm": 2786,
+            "projected_epf_rm": 362.18
+        },
+        {
+            "id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d",
+            "department_id": "b4fd80b3-d2f0-4cef-ba97-d5a93a6ec5b5",
+            "first_name": "Devin",
+            "role": "Assistant Manager",
+            "employment_type": "part_time",
+            "monthly_salary_rm": 8407,
+            "projected_epf_rm": 1008.84
+        },
+        {
+            "id": "016df4b3-8506-46fc-ad24-b734ce32aaaa",
+            "department_id": "b4fd80b3-d2f0-4cef-ba97-d5a93a6ec5b5",
+            "first_name": "Julie",
+            "role": "Store Manager",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 6435,
+            "projected_epf_rm": 772.2
+        },
+        {
+            "id": "438b2ff9-dc5e-4891-b962-59ee8d479711",
+            "department_id": "1090847c-48f2-4359-88b9-c62a9824b956",
+            "first_name": "Erika",
+            "role": "Accounts Officer",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 2381,
+            "projected_epf_rm": 309.53
+        },
+        {
+            "id": "4d6d5ebe-289a-4427-a5ff-5459119db731",
+            "department_id": "3e91f6ea-b92c-48f3-bb0e-8495d2771594",
+            "first_name": "Tracy",
+            "role": "Senior Sales Associate",
+            "employment_type": "part_time",
+            "monthly_salary_rm": 4348,
+            "projected_epf_rm": 565.24
+        },
+        {
+            "id": "535b7ada-2cad-4e53-af4b-db5f0b16b9f0",
+            "department_id": "1090847c-48f2-4359-88b9-c62a9824b956",
+            "first_name": "Ronald",
+            "role": "Office Administrator",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 3751,
+            "projected_epf_rm": 487.63
+        },
+        {
+            "id": "6b6c707b-27e7-43d8-b3eb-26835cfb0db8",
+            "department_id": "9f7a921e-dc39-4c56-bcf0-d96d44d8e310",
+            "first_name": "Robert",
+            "role": "Dispatch Officer",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 2340,
+            "projected_epf_rm": 304.2
+        },
+        {
+            "id": "8a516221-ef00-4243-8dd6-677c32639655",
+            "department_id": "b4fd80b3-d2f0-4cef-ba97-d5a93a6ec5b5",
+            "first_name": "April",
+            "role": "Assistant Manager",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 11117,
+            "projected_epf_rm": 1334.04
+        },
+        {
+            "id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b",
+            "department_id": "3e91f6ea-b92c-48f3-bb0e-8495d2771594",
+            "first_name": "Anthony",
+            "role": "Sales Lead",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 3189,
+            "projected_epf_rm": 414.57
+        },
+        {
+            "id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9",
+            "department_id": "3e91f6ea-b92c-48f3-bb0e-8495d2771594",
+            "first_name": "Jamie",
+            "role": "Sales Associate",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 3758,
+            "projected_epf_rm": 488.54
+        },
+        {
+            "id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8",
+            "department_id": "9f7a921e-dc39-4c56-bcf0-d96d44d8e310",
+            "first_name": "Phillip",
+            "role": "Warehouse Lead",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 2782,
+            "projected_epf_rm": 361.66
+        },
+        {
+            "id": "d6c24227-7c06-4363-8496-04f9649e3bcd",
+            "department_id": "3e91f6ea-b92c-48f3-bb0e-8495d2771594",
+            "first_name": "Matthew",
+            "role": "Sales Associate",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 4721,
+            "projected_epf_rm": 613.73
+        },
+        {
+            "id": "ff69c79d-8fbd-4afc-aa2c-e2b0f15af1f7",
+            "department_id": "3e91f6ea-b92c-48f3-bb0e-8495d2771594",
+            "first_name": "Douglas",
+            "role": "Customer Service Rep",
+            "employment_type": "full_time",
+            "monthly_salary_rm": 2308,
+            "projected_epf_rm": 300.04
+        }
+    ],
+    "revenue_engine": [
+        {
+            "order_number": "SO-000001",
+            "order_date": "2023-07-03",
+            "status": "confirmed",
+            "subtotal_rm": 5499.84,
+            "sst_amount_rm": 549.98,
+            "total_amount_rm": 6049.82,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000002",
+            "order_date": "2023-07-03",
+            "status": "confirmed",
+            "subtotal_rm": 2822.82,
+            "sst_amount_rm": 282.3,
+            "total_amount_rm": 3105.12,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000003",
+            "order_date": "2023-07-04",
+            "status": "confirmed",
+            "subtotal_rm": 11036.83,
+            "sst_amount_rm": 1103.68,
+            "total_amount_rm": 12140.51,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000004",
+            "order_date": "2023-07-04",
+            "status": "confirmed",
+            "subtotal_rm": 1473.47,
+            "sst_amount_rm": 147.36,
+            "total_amount_rm": 1620.83,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000005",
+            "order_date": "2023-07-05",
+            "status": "confirmed",
+            "subtotal_rm": 7849.12,
+            "sst_amount_rm": 784.93,
+            "total_amount_rm": 8634.05,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000006",
+            "order_date": "2023-07-05",
+            "status": "confirmed",
+            "subtotal_rm": 3687.42,
+            "sst_amount_rm": 368.77,
+            "total_amount_rm": 4056.19,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000007",
+            "order_date": "2023-07-06",
+            "status": "confirmed",
+            "subtotal_rm": 7653.02,
+            "sst_amount_rm": 765.34,
+            "total_amount_rm": 8418.37,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000008",
+            "order_date": "2023-07-06",
+            "status": "confirmed",
+            "subtotal_rm": 1061.38,
+            "sst_amount_rm": 106.14,
+            "total_amount_rm": 1167.52,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000009",
+            "order_date": "2023-07-06",
+            "status": "confirmed",
+            "subtotal_rm": 5034.75,
+            "sst_amount_rm": 503.49,
+            "total_amount_rm": 5538.24,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000010",
+            "order_date": "2023-07-07",
+            "status": "confirmed",
+            "subtotal_rm": 11031.17,
+            "sst_amount_rm": 1103.1,
+            "total_amount_rm": 12134.27,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000011",
+            "order_date": "2023-07-11",
+            "status": "confirmed",
+            "subtotal_rm": 2295.97,
+            "sst_amount_rm": 229.6,
+            "total_amount_rm": 2525.57,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000012",
+            "order_date": "2023-07-12",
+            "status": "confirmed",
+            "subtotal_rm": 4650.05,
+            "sst_amount_rm": 465.02,
+            "total_amount_rm": 5115.07,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000013",
+            "order_date": "2023-07-12",
+            "status": "confirmed",
+            "subtotal_rm": 7045.06,
+            "sst_amount_rm": 704.51,
+            "total_amount_rm": 7749.57,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000014",
+            "order_date": "2023-07-12",
+            "status": "confirmed",
+            "subtotal_rm": 1825.82,
+            "sst_amount_rm": 182.59,
+            "total_amount_rm": 2008.42,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000015",
+            "order_date": "2023-07-13",
+            "status": "confirmed",
+            "subtotal_rm": 1574.66,
+            "sst_amount_rm": 157.44,
+            "total_amount_rm": 1732.1,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000016",
+            "order_date": "2023-07-13",
+            "status": "confirmed",
+            "subtotal_rm": 5178.91,
+            "sst_amount_rm": 517.89,
+            "total_amount_rm": 5696.8,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000017",
+            "order_date": "2023-07-13",
+            "status": "confirmed",
+            "subtotal_rm": 5798.69,
+            "sst_amount_rm": 579.87,
+            "total_amount_rm": 6378.56,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000018",
+            "order_date": "2023-07-14",
+            "status": "confirmed",
+            "subtotal_rm": 5700.93,
+            "sst_amount_rm": 570.08,
+            "total_amount_rm": 6271.01,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000019",
+            "order_date": "2023-07-14",
+            "status": "confirmed",
+            "subtotal_rm": 14024.8,
+            "sst_amount_rm": 1402.46,
+            "total_amount_rm": 15427.26,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000020",
+            "order_date": "2023-07-17",
+            "status": "confirmed",
+            "subtotal_rm": 15894.66,
+            "sst_amount_rm": 1589.44,
+            "total_amount_rm": 17484.1,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000021",
+            "order_date": "2023-07-17",
+            "status": "confirmed",
+            "subtotal_rm": 6233.57,
+            "sst_amount_rm": 623.33,
+            "total_amount_rm": 6856.9,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000022",
+            "order_date": "2023-07-18",
+            "status": "confirmed",
+            "subtotal_rm": 6831.46,
+            "sst_amount_rm": 683.17,
+            "total_amount_rm": 7514.62,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000023",
+            "order_date": "2023-07-19",
+            "status": "confirmed",
+            "subtotal_rm": 7697.25,
+            "sst_amount_rm": 769.76,
+            "total_amount_rm": 8467.01,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000024",
+            "order_date": "2023-07-19",
+            "status": "confirmed",
+            "subtotal_rm": 1337.12,
+            "sst_amount_rm": 133.73,
+            "total_amount_rm": 1470.85,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000025",
+            "order_date": "2023-07-19",
+            "status": "confirmed",
+            "subtotal_rm": 5587.9,
+            "sst_amount_rm": 558.82,
+            "total_amount_rm": 6146.72,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000026",
+            "order_date": "2023-07-20",
+            "status": "confirmed",
+            "subtotal_rm": 14469.44,
+            "sst_amount_rm": 1446.91,
+            "total_amount_rm": 15916.35,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000027",
+            "order_date": "2023-07-20",
+            "status": "confirmed",
+            "subtotal_rm": 4006.53,
+            "sst_amount_rm": 400.64,
+            "total_amount_rm": 4407.17,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000028",
+            "order_date": "2023-07-20",
+            "status": "confirmed",
+            "subtotal_rm": 321.54,
+            "sst_amount_rm": 32.16,
+            "total_amount_rm": 353.7,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000029",
+            "order_date": "2023-07-21",
+            "status": "confirmed",
+            "subtotal_rm": 1406.72,
+            "sst_amount_rm": 140.67,
+            "total_amount_rm": 1547.39,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000030",
+            "order_date": "2023-07-24",
+            "status": "confirmed",
+            "subtotal_rm": 10107.39,
+            "sst_amount_rm": 1010.75,
+            "total_amount_rm": 11118.14,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000031",
+            "order_date": "2023-07-24",
+            "status": "confirmed",
+            "subtotal_rm": 6076.13,
+            "sst_amount_rm": 607.62,
+            "total_amount_rm": 6683.74,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000032",
+            "order_date": "2023-07-25",
+            "status": "confirmed",
+            "subtotal_rm": 10005.15,
+            "sst_amount_rm": 1000.51,
+            "total_amount_rm": 11005.66,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000033",
+            "order_date": "2023-07-25",
+            "status": "confirmed",
+            "subtotal_rm": 222.11,
+            "sst_amount_rm": 22.21,
+            "total_amount_rm": 244.32,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000034",
+            "order_date": "2023-07-26",
+            "status": "confirmed",
+            "subtotal_rm": 7514.91,
+            "sst_amount_rm": 751.49,
+            "total_amount_rm": 8266.4,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000035",
+            "order_date": "2023-07-26",
+            "status": "confirmed",
+            "subtotal_rm": 1178.24,
+            "sst_amount_rm": 117.82,
+            "total_amount_rm": 1296.06,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000036",
+            "order_date": "2023-07-26",
+            "status": "confirmed",
+            "subtotal_rm": 7361.57,
+            "sst_amount_rm": 736.13,
+            "total_amount_rm": 8097.7,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000037",
+            "order_date": "2023-07-26",
+            "status": "confirmed",
+            "subtotal_rm": 9334.85,
+            "sst_amount_rm": 933.5,
+            "total_amount_rm": 10268.35,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000038",
+            "order_date": "2023-07-27",
+            "status": "confirmed",
+            "subtotal_rm": 13461.54,
+            "sst_amount_rm": 1346.18,
+            "total_amount_rm": 14807.71,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000039",
+            "order_date": "2023-07-27",
+            "status": "confirmed",
+            "subtotal_rm": 616.9,
+            "sst_amount_rm": 61.73,
+            "total_amount_rm": 678.62,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000040",
+            "order_date": "2023-07-28",
+            "status": "confirmed",
+            "subtotal_rm": 3578.88,
+            "sst_amount_rm": 357.89,
+            "total_amount_rm": 3936.77,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000041",
+            "order_date": "2023-07-28",
+            "status": "confirmed",
+            "subtotal_rm": 5480.45,
+            "sst_amount_rm": 548.06,
+            "total_amount_rm": 6028.51,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000042",
+            "order_date": "2023-07-31",
+            "status": "confirmed",
+            "subtotal_rm": 3826.18,
+            "sst_amount_rm": 382.62,
+            "total_amount_rm": 4208.8,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000043",
+            "order_date": "2023-08-01",
+            "status": "confirmed",
+            "subtotal_rm": 4609.79,
+            "sst_amount_rm": 460.99,
+            "total_amount_rm": 5070.78,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000044",
+            "order_date": "2023-08-01",
+            "status": "confirmed",
+            "subtotal_rm": 2500.48,
+            "sst_amount_rm": 250.05,
+            "total_amount_rm": 2750.53,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000045",
+            "order_date": "2023-08-02",
+            "status": "confirmed",
+            "subtotal_rm": 3647.55,
+            "sst_amount_rm": 364.77,
+            "total_amount_rm": 4012.32,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000046",
+            "order_date": "2023-08-02",
+            "status": "confirmed",
+            "subtotal_rm": 3189.86,
+            "sst_amount_rm": 318.98,
+            "total_amount_rm": 3508.83,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000047",
+            "order_date": "2023-08-03",
+            "status": "confirmed",
+            "subtotal_rm": 13720.45,
+            "sst_amount_rm": 1372.03,
+            "total_amount_rm": 15092.48,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000048",
+            "order_date": "2023-08-03",
+            "status": "confirmed",
+            "subtotal_rm": 6115.87,
+            "sst_amount_rm": 611.62,
+            "total_amount_rm": 6727.49,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000049",
+            "order_date": "2023-08-03",
+            "status": "confirmed",
+            "subtotal_rm": 4432.13,
+            "sst_amount_rm": 443.2,
+            "total_amount_rm": 4875.33,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000050",
+            "order_date": "2023-08-03",
+            "status": "confirmed",
+            "subtotal_rm": 8464.93,
+            "sst_amount_rm": 846.5,
+            "total_amount_rm": 9311.42,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000051",
+            "order_date": "2023-08-04",
+            "status": "confirmed",
+            "subtotal_rm": 6284.96,
+            "sst_amount_rm": 628.48,
+            "total_amount_rm": 6913.44,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000052",
+            "order_date": "2023-08-04",
+            "status": "confirmed",
+            "subtotal_rm": 2038.11,
+            "sst_amount_rm": 203.81,
+            "total_amount_rm": 2241.92,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000053",
+            "order_date": "2023-08-07",
+            "status": "confirmed",
+            "subtotal_rm": 15993.12,
+            "sst_amount_rm": 1599.3,
+            "total_amount_rm": 17592.42,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000054",
+            "order_date": "2023-08-08",
+            "status": "confirmed",
+            "subtotal_rm": 6583.3,
+            "sst_amount_rm": 658.34,
+            "total_amount_rm": 7241.63,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000055",
+            "order_date": "2023-08-09",
+            "status": "confirmed",
+            "subtotal_rm": 471.33,
+            "sst_amount_rm": 47.14,
+            "total_amount_rm": 518.46,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000056",
+            "order_date": "2023-08-09",
+            "status": "confirmed",
+            "subtotal_rm": 1991.36,
+            "sst_amount_rm": 199.14,
+            "total_amount_rm": 2190.5,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000057",
+            "order_date": "2023-08-10",
+            "status": "confirmed",
+            "subtotal_rm": 7999.49,
+            "sst_amount_rm": 799.94,
+            "total_amount_rm": 8799.42,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000058",
+            "order_date": "2023-08-11",
+            "status": "confirmed",
+            "subtotal_rm": 17322.46,
+            "sst_amount_rm": 1732.26,
+            "total_amount_rm": 19054.72,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000059",
+            "order_date": "2023-08-11",
+            "status": "confirmed",
+            "subtotal_rm": 9497.57,
+            "sst_amount_rm": 949.76,
+            "total_amount_rm": 10447.33,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000060",
+            "order_date": "2023-08-11",
+            "status": "confirmed",
+            "subtotal_rm": 2017.7,
+            "sst_amount_rm": 201.79,
+            "total_amount_rm": 2219.49,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000061",
+            "order_date": "2023-08-14",
+            "status": "confirmed",
+            "subtotal_rm": 10547.17,
+            "sst_amount_rm": 1054.72,
+            "total_amount_rm": 11601.89,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000062",
+            "order_date": "2023-08-14",
+            "status": "confirmed",
+            "subtotal_rm": 1501.06,
+            "sst_amount_rm": 150.08,
+            "total_amount_rm": 1651.14,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000063",
+            "order_date": "2023-08-14",
+            "status": "confirmed",
+            "subtotal_rm": 855.3,
+            "sst_amount_rm": 85.54,
+            "total_amount_rm": 940.83,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000064",
+            "order_date": "2023-08-15",
+            "status": "confirmed",
+            "subtotal_rm": 7938.02,
+            "sst_amount_rm": 793.79,
+            "total_amount_rm": 8731.81,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000065",
+            "order_date": "2023-08-15",
+            "status": "confirmed",
+            "subtotal_rm": 3774.11,
+            "sst_amount_rm": 377.41,
+            "total_amount_rm": 4151.52,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000066",
+            "order_date": "2023-08-16",
+            "status": "confirmed",
+            "subtotal_rm": 8501.18,
+            "sst_amount_rm": 850.14,
+            "total_amount_rm": 9351.33,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000067",
+            "order_date": "2023-08-17",
+            "status": "confirmed",
+            "subtotal_rm": 8202.18,
+            "sst_amount_rm": 820.19,
+            "total_amount_rm": 9022.37,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000068",
+            "order_date": "2023-08-17",
+            "status": "confirmed",
+            "subtotal_rm": 11475.2,
+            "sst_amount_rm": 1147.52,
+            "total_amount_rm": 12622.72,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000069",
+            "order_date": "2023-08-17",
+            "status": "confirmed",
+            "subtotal_rm": 1531.84,
+            "sst_amount_rm": 153.18,
+            "total_amount_rm": 1685.02,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000070",
+            "order_date": "2023-08-17",
+            "status": "confirmed",
+            "subtotal_rm": 6630.98,
+            "sst_amount_rm": 663.14,
+            "total_amount_rm": 7294.11,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000071",
+            "order_date": "2023-08-18",
+            "status": "confirmed",
+            "subtotal_rm": 1470.75,
+            "sst_amount_rm": 147.07,
+            "total_amount_rm": 1617.82,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000072",
+            "order_date": "2023-08-18",
+            "status": "confirmed",
+            "subtotal_rm": 5239.17,
+            "sst_amount_rm": 523.9,
+            "total_amount_rm": 5763.07,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000073",
+            "order_date": "2023-08-21",
+            "status": "confirmed",
+            "subtotal_rm": 9257.22,
+            "sst_amount_rm": 925.76,
+            "total_amount_rm": 10182.98,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000074",
+            "order_date": "2023-08-21",
+            "status": "confirmed",
+            "subtotal_rm": 6323.84,
+            "sst_amount_rm": 632.38,
+            "total_amount_rm": 6956.22,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000075",
+            "order_date": "2023-08-21",
+            "status": "confirmed",
+            "subtotal_rm": 7548.1,
+            "sst_amount_rm": 754.85,
+            "total_amount_rm": 8302.94,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000076",
+            "order_date": "2023-08-22",
+            "status": "confirmed",
+            "subtotal_rm": 2593.95,
+            "sst_amount_rm": 259.39,
+            "total_amount_rm": 2853.34,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000077",
+            "order_date": "2023-08-22",
+            "status": "confirmed",
+            "subtotal_rm": 5126.43,
+            "sst_amount_rm": 512.67,
+            "total_amount_rm": 5639.1,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000078",
+            "order_date": "2023-08-22",
+            "status": "confirmed",
+            "subtotal_rm": 13779.81,
+            "sst_amount_rm": 1378.02,
+            "total_amount_rm": 15157.82,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000079",
+            "order_date": "2023-08-23",
+            "status": "confirmed",
+            "subtotal_rm": 5012.77,
+            "sst_amount_rm": 501.28,
+            "total_amount_rm": 5514.05,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000080",
+            "order_date": "2023-08-23",
+            "status": "confirmed",
+            "subtotal_rm": 1668.38,
+            "sst_amount_rm": 166.82,
+            "total_amount_rm": 1835.2,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000081",
+            "order_date": "2023-08-24",
+            "status": "confirmed",
+            "subtotal_rm": 11104.35,
+            "sst_amount_rm": 1110.46,
+            "total_amount_rm": 12214.82,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000082",
+            "order_date": "2023-08-24",
+            "status": "confirmed",
+            "subtotal_rm": 7615.58,
+            "sst_amount_rm": 761.6,
+            "total_amount_rm": 8377.18,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000083",
+            "order_date": "2023-08-24",
+            "status": "confirmed",
+            "subtotal_rm": 1316.0,
+            "sst_amount_rm": 131.58,
+            "total_amount_rm": 1447.58,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000084",
+            "order_date": "2023-08-24",
+            "status": "confirmed",
+            "subtotal_rm": 6562.88,
+            "sst_amount_rm": 656.29,
+            "total_amount_rm": 7219.17,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000085",
+            "order_date": "2023-08-25",
+            "status": "confirmed",
+            "subtotal_rm": 6908.22,
+            "sst_amount_rm": 690.82,
+            "total_amount_rm": 7599.04,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000086",
+            "order_date": "2023-08-25",
+            "status": "confirmed",
+            "subtotal_rm": 12668.42,
+            "sst_amount_rm": 1266.88,
+            "total_amount_rm": 13935.3,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000087",
+            "order_date": "2023-08-28",
+            "status": "confirmed",
+            "subtotal_rm": 995.71,
+            "sst_amount_rm": 99.58,
+            "total_amount_rm": 1095.3,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000088",
+            "order_date": "2023-08-28",
+            "status": "confirmed",
+            "subtotal_rm": 4860.1,
+            "sst_amount_rm": 486.02,
+            "total_amount_rm": 5346.11,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000089",
+            "order_date": "2023-08-29",
+            "status": "confirmed",
+            "subtotal_rm": 1886.53,
+            "sst_amount_rm": 188.64,
+            "total_amount_rm": 2075.17,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000090",
+            "order_date": "2023-08-29",
+            "status": "confirmed",
+            "subtotal_rm": 6508.16,
+            "sst_amount_rm": 650.78,
+            "total_amount_rm": 7158.94,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000091",
+            "order_date": "2023-08-30",
+            "status": "confirmed",
+            "subtotal_rm": 80.38,
+            "sst_amount_rm": 8.03,
+            "total_amount_rm": 88.42,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000092",
+            "order_date": "2023-08-30",
+            "status": "confirmed",
+            "subtotal_rm": 11995.23,
+            "sst_amount_rm": 1199.55,
+            "total_amount_rm": 13194.78,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000093",
+            "order_date": "2023-09-01",
+            "status": "confirmed",
+            "subtotal_rm": 855.3,
+            "sst_amount_rm": 85.54,
+            "total_amount_rm": 940.83,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000094",
+            "order_date": "2023-09-01",
+            "status": "confirmed",
+            "subtotal_rm": 6099.1,
+            "sst_amount_rm": 609.92,
+            "total_amount_rm": 6709.02,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000095",
+            "order_date": "2023-09-04",
+            "status": "confirmed",
+            "subtotal_rm": 4031.17,
+            "sst_amount_rm": 403.14,
+            "total_amount_rm": 4434.3,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000096",
+            "order_date": "2023-09-04",
+            "status": "confirmed",
+            "subtotal_rm": 4476.19,
+            "sst_amount_rm": 447.62,
+            "total_amount_rm": 4923.81,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000097",
+            "order_date": "2023-09-05",
+            "status": "confirmed",
+            "subtotal_rm": 4923.07,
+            "sst_amount_rm": 492.32,
+            "total_amount_rm": 5415.39,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000098",
+            "order_date": "2023-09-06",
+            "status": "confirmed",
+            "subtotal_rm": 1508.32,
+            "sst_amount_rm": 150.82,
+            "total_amount_rm": 1659.14,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000099",
+            "order_date": "2023-09-06",
+            "status": "confirmed",
+            "subtotal_rm": 2457.28,
+            "sst_amount_rm": 245.73,
+            "total_amount_rm": 2703.01,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000100",
+            "order_date": "2023-09-07",
+            "status": "confirmed",
+            "subtotal_rm": 9292.1,
+            "sst_amount_rm": 929.18,
+            "total_amount_rm": 10221.28,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000101",
+            "order_date": "2023-09-07",
+            "status": "confirmed",
+            "subtotal_rm": 4845.34,
+            "sst_amount_rm": 484.54,
+            "total_amount_rm": 5329.89,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000102",
+            "order_date": "2023-09-07",
+            "status": "confirmed",
+            "subtotal_rm": 5121.09,
+            "sst_amount_rm": 512.13,
+            "total_amount_rm": 5633.22,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000103",
+            "order_date": "2023-09-08",
+            "status": "confirmed",
+            "subtotal_rm": 5865.34,
+            "sst_amount_rm": 586.56,
+            "total_amount_rm": 6451.9,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000104",
+            "order_date": "2023-09-08",
+            "status": "confirmed",
+            "subtotal_rm": 527.52,
+            "sst_amount_rm": 52.77,
+            "total_amount_rm": 580.29,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000105",
+            "order_date": "2023-09-08",
+            "status": "confirmed",
+            "subtotal_rm": 17339.84,
+            "sst_amount_rm": 1734.02,
+            "total_amount_rm": 19073.86,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000106",
+            "order_date": "2023-09-08",
+            "status": "confirmed",
+            "subtotal_rm": 1696.1,
+            "sst_amount_rm": 169.6,
+            "total_amount_rm": 1865.7,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000107",
+            "order_date": "2023-09-11",
+            "status": "confirmed",
+            "subtotal_rm": 5013.5,
+            "sst_amount_rm": 501.34,
+            "total_amount_rm": 5514.85,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000108",
+            "order_date": "2023-09-11",
+            "status": "confirmed",
+            "subtotal_rm": 11393.47,
+            "sst_amount_rm": 1139.33,
+            "total_amount_rm": 12532.8,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000109",
+            "order_date": "2023-09-11",
+            "status": "confirmed",
+            "subtotal_rm": 1914.21,
+            "sst_amount_rm": 191.42,
+            "total_amount_rm": 2105.63,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000110",
+            "order_date": "2023-09-12",
+            "status": "confirmed",
+            "subtotal_rm": 11704.8,
+            "sst_amount_rm": 1170.53,
+            "total_amount_rm": 12875.33,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000111",
+            "order_date": "2023-09-12",
+            "status": "confirmed",
+            "subtotal_rm": 17034.08,
+            "sst_amount_rm": 1703.39,
+            "total_amount_rm": 18737.47,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000112",
+            "order_date": "2023-09-12",
+            "status": "confirmed",
+            "subtotal_rm": 7323.84,
+            "sst_amount_rm": 732.38,
+            "total_amount_rm": 8056.22,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000113",
+            "order_date": "2023-09-12",
+            "status": "confirmed",
+            "subtotal_rm": 8728.32,
+            "sst_amount_rm": 872.8,
+            "total_amount_rm": 9601.12,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000114",
+            "order_date": "2023-09-13",
+            "status": "confirmed",
+            "subtotal_rm": 7132.9,
+            "sst_amount_rm": 713.31,
+            "total_amount_rm": 7846.21,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000115",
+            "order_date": "2023-09-15",
+            "status": "confirmed",
+            "subtotal_rm": 6903.65,
+            "sst_amount_rm": 690.4,
+            "total_amount_rm": 7594.05,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000116",
+            "order_date": "2023-09-15",
+            "status": "confirmed",
+            "subtotal_rm": 4871.36,
+            "sst_amount_rm": 487.14,
+            "total_amount_rm": 5358.5,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000117",
+            "order_date": "2023-09-15",
+            "status": "confirmed",
+            "subtotal_rm": 5863.87,
+            "sst_amount_rm": 586.4,
+            "total_amount_rm": 6450.27,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000118",
+            "order_date": "2023-09-18",
+            "status": "confirmed",
+            "subtotal_rm": 5389.7,
+            "sst_amount_rm": 538.94,
+            "total_amount_rm": 5928.64,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000119",
+            "order_date": "2023-09-18",
+            "status": "confirmed",
+            "subtotal_rm": 10463.14,
+            "sst_amount_rm": 1046.3,
+            "total_amount_rm": 11509.44,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000120",
+            "order_date": "2023-09-19",
+            "status": "confirmed",
+            "subtotal_rm": 3088.45,
+            "sst_amount_rm": 308.83,
+            "total_amount_rm": 3397.28,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000121",
+            "order_date": "2023-09-20",
+            "status": "confirmed",
+            "subtotal_rm": 8220.16,
+            "sst_amount_rm": 821.98,
+            "total_amount_rm": 9042.14,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000122",
+            "order_date": "2023-09-20",
+            "status": "confirmed",
+            "subtotal_rm": 2698.37,
+            "sst_amount_rm": 269.82,
+            "total_amount_rm": 2968.19,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000123",
+            "order_date": "2023-09-20",
+            "status": "confirmed",
+            "subtotal_rm": 8640.0,
+            "sst_amount_rm": 864.03,
+            "total_amount_rm": 9504.03,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000124",
+            "order_date": "2023-09-20",
+            "status": "confirmed",
+            "subtotal_rm": 7983.62,
+            "sst_amount_rm": 798.4,
+            "total_amount_rm": 8782.02,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000125",
+            "order_date": "2023-09-21",
+            "status": "confirmed",
+            "subtotal_rm": 5217.66,
+            "sst_amount_rm": 521.76,
+            "total_amount_rm": 5739.42,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000126",
+            "order_date": "2023-09-21",
+            "status": "confirmed",
+            "subtotal_rm": 6446.69,
+            "sst_amount_rm": 644.7,
+            "total_amount_rm": 7091.39,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000127",
+            "order_date": "2023-09-25",
+            "status": "confirmed",
+            "subtotal_rm": 2690.56,
+            "sst_amount_rm": 269.06,
+            "total_amount_rm": 2959.62,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000128",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 3358.3,
+            "sst_amount_rm": 335.84,
+            "total_amount_rm": 3694.14,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000129",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 7386.46,
+            "sst_amount_rm": 738.66,
+            "total_amount_rm": 8125.12,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000130",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 5688.58,
+            "sst_amount_rm": 568.86,
+            "total_amount_rm": 6257.44,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000131",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 5004.83,
+            "sst_amount_rm": 500.48,
+            "total_amount_rm": 5505.31,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000132",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 930.82,
+            "sst_amount_rm": 93.09,
+            "total_amount_rm": 1023.9,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000133",
+            "order_date": "2023-09-26",
+            "status": "confirmed",
+            "subtotal_rm": 590.3,
+            "sst_amount_rm": 59.01,
+            "total_amount_rm": 649.31,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000134",
+            "order_date": "2023-09-27",
+            "status": "confirmed",
+            "subtotal_rm": 4499.36,
+            "sst_amount_rm": 449.95,
+            "total_amount_rm": 4949.31,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000135",
+            "order_date": "2023-09-27",
+            "status": "confirmed",
+            "subtotal_rm": 5457.22,
+            "sst_amount_rm": 545.7,
+            "total_amount_rm": 6002.91,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000136",
+            "order_date": "2023-09-27",
+            "status": "confirmed",
+            "subtotal_rm": 7893.82,
+            "sst_amount_rm": 789.38,
+            "total_amount_rm": 8683.2,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000137",
+            "order_date": "2023-09-27",
+            "status": "confirmed",
+            "subtotal_rm": 6899.2,
+            "sst_amount_rm": 689.92,
+            "total_amount_rm": 7589.12,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000138",
+            "order_date": "2023-09-28",
+            "status": "confirmed",
+            "subtotal_rm": 2224.77,
+            "sst_amount_rm": 222.46,
+            "total_amount_rm": 2447.23,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000139",
+            "order_date": "2023-09-28",
+            "status": "confirmed",
+            "subtotal_rm": 7891.78,
+            "sst_amount_rm": 789.22,
+            "total_amount_rm": 8680.99,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000140",
+            "order_date": "2023-09-28",
+            "status": "confirmed",
+            "subtotal_rm": 16324.61,
+            "sst_amount_rm": 1632.45,
+            "total_amount_rm": 17957.06,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000141",
+            "order_date": "2023-09-28",
+            "status": "confirmed",
+            "subtotal_rm": 6858.21,
+            "sst_amount_rm": 685.86,
+            "total_amount_rm": 7544.06,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000142",
+            "order_date": "2023-09-29",
+            "status": "confirmed",
+            "subtotal_rm": 9342.21,
+            "sst_amount_rm": 934.24,
+            "total_amount_rm": 10276.45,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000143",
+            "order_date": "2023-09-29",
+            "status": "confirmed",
+            "subtotal_rm": 2543.17,
+            "sst_amount_rm": 254.34,
+            "total_amount_rm": 2797.5,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000144",
+            "order_date": "2023-09-29",
+            "status": "confirmed",
+            "subtotal_rm": 4949.86,
+            "sst_amount_rm": 494.98,
+            "total_amount_rm": 5444.83,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000145",
+            "order_date": "2023-09-29",
+            "status": "confirmed",
+            "subtotal_rm": 1266.43,
+            "sst_amount_rm": 126.62,
+            "total_amount_rm": 1393.06,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000146",
+            "order_date": "2023-10-02",
+            "status": "confirmed",
+            "subtotal_rm": 5583.62,
+            "sst_amount_rm": 558.37,
+            "total_amount_rm": 6141.98,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000147",
+            "order_date": "2023-10-03",
+            "status": "confirmed",
+            "subtotal_rm": 9920.8,
+            "sst_amount_rm": 992.1,
+            "total_amount_rm": 10912.9,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000148",
+            "order_date": "2023-10-03",
+            "status": "confirmed",
+            "subtotal_rm": 1311.07,
+            "sst_amount_rm": 131.1,
+            "total_amount_rm": 1442.18,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000149",
+            "order_date": "2023-10-05",
+            "status": "confirmed",
+            "subtotal_rm": 9485.31,
+            "sst_amount_rm": 948.54,
+            "total_amount_rm": 10433.86,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000150",
+            "order_date": "2023-10-05",
+            "status": "confirmed",
+            "subtotal_rm": 6570.18,
+            "sst_amount_rm": 656.99,
+            "total_amount_rm": 7227.17,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000151",
+            "order_date": "2023-10-06",
+            "status": "confirmed",
+            "subtotal_rm": 4904.03,
+            "sst_amount_rm": 490.4,
+            "total_amount_rm": 5394.43,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000152",
+            "order_date": "2023-10-06",
+            "status": "confirmed",
+            "subtotal_rm": 482.3,
+            "sst_amount_rm": 48.22,
+            "total_amount_rm": 530.53,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000153",
+            "order_date": "2023-10-06",
+            "status": "confirmed",
+            "subtotal_rm": 10920.06,
+            "sst_amount_rm": 1092.03,
+            "total_amount_rm": 12012.1,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000154",
+            "order_date": "2023-10-06",
+            "status": "confirmed",
+            "subtotal_rm": 1094.59,
+            "sst_amount_rm": 109.47,
+            "total_amount_rm": 1204.06,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000155",
+            "order_date": "2023-10-06",
+            "status": "confirmed",
+            "subtotal_rm": 1659.97,
+            "sst_amount_rm": 165.98,
+            "total_amount_rm": 1825.95,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000156",
+            "order_date": "2023-10-09",
+            "status": "confirmed",
+            "subtotal_rm": 2883.17,
+            "sst_amount_rm": 288.32,
+            "total_amount_rm": 3171.49,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000157",
+            "order_date": "2023-10-09",
+            "status": "confirmed",
+            "subtotal_rm": 7122.27,
+            "sst_amount_rm": 712.22,
+            "total_amount_rm": 7834.5,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000158",
+            "order_date": "2023-10-09",
+            "status": "confirmed",
+            "subtotal_rm": 2945.25,
+            "sst_amount_rm": 294.53,
+            "total_amount_rm": 3239.78,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000159",
+            "order_date": "2023-10-10",
+            "status": "confirmed",
+            "subtotal_rm": 6171.49,
+            "sst_amount_rm": 617.18,
+            "total_amount_rm": 6788.67,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000160",
+            "order_date": "2023-10-10",
+            "status": "confirmed",
+            "subtotal_rm": 8864.77,
+            "sst_amount_rm": 886.46,
+            "total_amount_rm": 9751.23,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000161",
+            "order_date": "2023-10-11",
+            "status": "confirmed",
+            "subtotal_rm": 11302.82,
+            "sst_amount_rm": 1130.3,
+            "total_amount_rm": 12433.12,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000162",
+            "order_date": "2023-10-11",
+            "status": "confirmed",
+            "subtotal_rm": 2734.02,
+            "sst_amount_rm": 273.41,
+            "total_amount_rm": 3007.42,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000163",
+            "order_date": "2023-10-13",
+            "status": "confirmed",
+            "subtotal_rm": 12465.22,
+            "sst_amount_rm": 1246.53,
+            "total_amount_rm": 13711.74,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000164",
+            "order_date": "2023-10-16",
+            "status": "confirmed",
+            "subtotal_rm": 3593.66,
+            "sst_amount_rm": 359.36,
+            "total_amount_rm": 3953.02,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000165",
+            "order_date": "2023-10-17",
+            "status": "confirmed",
+            "subtotal_rm": 9270.34,
+            "sst_amount_rm": 927.04,
+            "total_amount_rm": 10197.38,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000166",
+            "order_date": "2023-10-17",
+            "status": "confirmed",
+            "subtotal_rm": 11212.54,
+            "sst_amount_rm": 1121.28,
+            "total_amount_rm": 12333.82,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        },
+        {
+            "order_number": "SO-000167",
+            "order_date": "2023-10-17",
+            "status": "confirmed",
+            "subtotal_rm": 10008.1,
+            "sst_amount_rm": 1000.83,
+            "total_amount_rm": 11008.93,
+            "handled_by_employee_id": "016df4b3-8506-46fc-ad24-b734ce32aaaa"
+        },
+        {
+            "order_number": "SO-000168",
+            "order_date": "2023-10-17",
+            "status": "confirmed",
+            "subtotal_rm": 5603.14,
+            "sst_amount_rm": 560.35,
+            "total_amount_rm": 6163.49,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000169",
+            "order_date": "2023-10-18",
+            "status": "confirmed",
+            "subtotal_rm": 3026.4,
+            "sst_amount_rm": 302.62,
+            "total_amount_rm": 3329.02,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000170",
+            "order_date": "2023-10-18",
+            "status": "confirmed",
+            "subtotal_rm": 1043.33,
+            "sst_amount_rm": 104.32,
+            "total_amount_rm": 1147.65,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000171",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 12445.38,
+            "sst_amount_rm": 1244.54,
+            "total_amount_rm": 13689.92,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000172",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 5787.3,
+            "sst_amount_rm": 578.75,
+            "total_amount_rm": 6366.05,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000173",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 2605.54,
+            "sst_amount_rm": 260.61,
+            "total_amount_rm": 2866.14,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000174",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 879.2,
+            "sst_amount_rm": 87.94,
+            "total_amount_rm": 967.14,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000175",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 147.65,
+            "sst_amount_rm": 14.75,
+            "total_amount_rm": 162.4,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000176",
+            "order_date": "2023-10-19",
+            "status": "confirmed",
+            "subtotal_rm": 2608.32,
+            "sst_amount_rm": 260.83,
+            "total_amount_rm": 2869.15,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000177",
+            "order_date": "2023-10-20",
+            "status": "confirmed",
+            "subtotal_rm": 110.24,
+            "sst_amount_rm": 11.04,
+            "total_amount_rm": 121.28,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000178",
+            "order_date": "2023-10-20",
+            "status": "confirmed",
+            "subtotal_rm": 5520.42,
+            "sst_amount_rm": 552.06,
+            "total_amount_rm": 6072.48,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000179",
+            "order_date": "2023-10-20",
+            "status": "confirmed",
+            "subtotal_rm": 417.6,
+            "sst_amount_rm": 41.76,
+            "total_amount_rm": 459.36,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000180",
+            "order_date": "2023-10-20",
+            "status": "confirmed",
+            "subtotal_rm": 7504.13,
+            "sst_amount_rm": 750.4,
+            "total_amount_rm": 8254.53,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000181",
+            "order_date": "2023-10-20",
+            "status": "confirmed",
+            "subtotal_rm": 7575.55,
+            "sst_amount_rm": 757.54,
+            "total_amount_rm": 8333.09,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000182",
+            "order_date": "2023-10-23",
+            "status": "confirmed",
+            "subtotal_rm": 2475.78,
+            "sst_amount_rm": 247.58,
+            "total_amount_rm": 2723.36,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000183",
+            "order_date": "2023-10-23",
+            "status": "confirmed",
+            "subtotal_rm": 5494.43,
+            "sst_amount_rm": 549.44,
+            "total_amount_rm": 6043.87,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000184",
+            "order_date": "2023-10-23",
+            "status": "confirmed",
+            "subtotal_rm": 4343.81,
+            "sst_amount_rm": 434.37,
+            "total_amount_rm": 4778.18,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000185",
+            "order_date": "2023-10-23",
+            "status": "confirmed",
+            "subtotal_rm": 18210.53,
+            "sst_amount_rm": 1821.06,
+            "total_amount_rm": 20031.58,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000186",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 6438.56,
+            "sst_amount_rm": 643.87,
+            "total_amount_rm": 7082.43,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000187",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 7255.94,
+            "sst_amount_rm": 725.6,
+            "total_amount_rm": 7981.54,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000188",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 8992.99,
+            "sst_amount_rm": 899.3,
+            "total_amount_rm": 9892.29,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000189",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 5439.68,
+            "sst_amount_rm": 544.0,
+            "total_amount_rm": 5983.68,
+            "handled_by_employee_id": "9862a9eb-96ca-46f8-a3b9-a6d06d65e53d"
+        },
+        {
+            "order_number": "SO-000190",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 12269.82,
+            "sst_amount_rm": 1227.01,
+            "total_amount_rm": 13496.83,
+            "handled_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "order_number": "SO-000191",
+            "order_date": "2023-10-24",
+            "status": "confirmed",
+            "subtotal_rm": 7423.87,
+            "sst_amount_rm": 742.4,
+            "total_amount_rm": 8166.27,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000192",
+            "order_date": "2023-10-25",
+            "status": "confirmed",
+            "subtotal_rm": 8429.06,
+            "sst_amount_rm": 842.88,
+            "total_amount_rm": 9271.94,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000193",
+            "order_date": "2023-10-25",
+            "status": "confirmed",
+            "subtotal_rm": 706.05,
+            "sst_amount_rm": 70.59,
+            "total_amount_rm": 776.64,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000194",
+            "order_date": "2023-10-26",
+            "status": "confirmed",
+            "subtotal_rm": 122.59,
+            "sst_amount_rm": 12.26,
+            "total_amount_rm": 134.85,
+            "handled_by_employee_id": "a6e50796-237c-4eb9-83e7-43b0fbcf9d2b"
+        },
+        {
+            "order_number": "SO-000195",
+            "order_date": "2023-10-26",
+            "status": "confirmed",
+            "subtotal_rm": 2350.3,
+            "sst_amount_rm": 235.04,
+            "total_amount_rm": 2585.34,
+            "handled_by_employee_id": "4d6d5ebe-289a-4427-a5ff-5459119db731"
+        },
+        {
+            "order_number": "SO-000196",
+            "order_date": "2023-10-26",
+            "status": "confirmed",
+            "subtotal_rm": 12774.82,
+            "sst_amount_rm": 1277.44,
+            "total_amount_rm": 14052.26,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000197",
+            "order_date": "2023-10-26",
+            "status": "confirmed",
+            "subtotal_rm": 12368.45,
+            "sst_amount_rm": 1236.86,
+            "total_amount_rm": 13605.31,
+            "handled_by_employee_id": "8a516221-ef00-4243-8dd6-677c32639655"
+        },
+        {
+            "order_number": "SO-000198",
+            "order_date": "2023-10-26",
+            "status": "confirmed",
+            "subtotal_rm": 385.02,
+            "sst_amount_rm": 38.5,
+            "total_amount_rm": 423.52,
+            "handled_by_employee_id": "9b2d8a13-52d0-46ef-af6d-640ac2453d12"
+        },
+        {
+            "order_number": "SO-000199",
+            "order_date": "2023-10-27",
+            "status": "confirmed",
+            "subtotal_rm": 3551.17,
+            "sst_amount_rm": 355.1,
+            "total_amount_rm": 3906.27,
+            "handled_by_employee_id": "d6c24227-7c06-4363-8496-04f9649e3bcd"
+        },
+        {
+            "order_number": "SO-000200",
+            "order_date": "2023-10-27",
+            "status": "confirmed",
+            "subtotal_rm": 5420.67,
+            "sst_amount_rm": 542.08,
+            "total_amount_rm": 5962.75,
+            "handled_by_employee_id": "bb97fea4-a9d4-441b-a30f-fcd6977019e9"
+        }
+    ],
+    "operational_load": [
+        {
+            "movement_date": "2023-07-03",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-03",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-03",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-03",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-03",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -3,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-04",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-05",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-06",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -3,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -8,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -8,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-07",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-11",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-11",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-12",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -8,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-13",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-14",
+            "quantity": -3,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-17",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-18",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-18",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-18",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -8,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -4,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-19",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-20",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-21",
+            "quantity": -8,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -4,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-24",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -8,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-25",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -4,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -1,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-26",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -7,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -4,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-27",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-28",
+            "quantity": -6,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-31",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-31",
+            "quantity": -2,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-07-31",
+            "quantity": -3,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-07-31",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-01",
+            "quantity": -4,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-08-01",
+            "quantity": -10,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-08-01",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-01",
+            "quantity": -6,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-01",
+            "quantity": -8,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -5,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -10,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-02",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -2,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -9,
+            "packed_by_employee_id": "c06dbd8c-46d0-4a05-a123-c65c960a53e8"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -1,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -5,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -9,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -3,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        },
+        {
+            "movement_date": "2023-08-03",
+            "quantity": -7,
+            "packed_by_employee_id": "5197f5d3-738d-4e77-8916-31de3d47080a"
+        }
+    ]
+}

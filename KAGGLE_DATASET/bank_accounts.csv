@@ -1,0 +1,3 @@
+id,company_id,account_name,bsb,account_number,bank_name,account_type,gl_account_code,opening_balance,current_balance,is_active
+fddb8077-a2c6-4e94-acd1-a1cd518128f6,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Business Savings Account,375-606,25973219,ANZ,savings,1-1010,0.00,0.00,True
+81737c46-49c1-4d08-ab34-6aa27c1d423f,c3e61d8e-e415-4326-931a-cffe4ec7ba0f,Business Operating Account,375-606,50179795,ANZ,operating,1-1000,0.00,2205016.26,True
