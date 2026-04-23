@@ -9,10 +9,10 @@
  * Layout:
  * ┌─────────┬────────────────────────────────────────┐
  * │ Sidebar │  Header + Active View Content          │
- * │         │                                         │
- * │ Nav     │  Dashboard / Simulation / Compliance /  │
- * │ Items   │  Anomaly / NLP / Blockchain /           │
- * │         │  Onboarding / Settings                  │
+ * │         │                                        │
+ * │ Nav     │  Dashboard / Simulation / Compliance / │
+ * │ Items   │  Anomaly / NLP / Blockchain /          │
+ * │         │  Onboarding / Settings                 │
  * └─────────┴────────────────────────────────────────┘
  */
 
@@ -24,7 +24,6 @@ import { NavigationProvider } from "./context/NavigationContext";
 
 // Dashboard cards
 import DigitalTwinSimulation from "./components/DigitalTwinSimulation";
-import PredictiveSimulation from "./components/PredictiveSimulation";
 
 // Full-page views
 import StatutoryView from "./components/StatutoryView";
@@ -88,19 +87,10 @@ export default function AppShell() {
               <Overview />
             )}
 
-            {/* ── Simulation View ─────────────────────────────────── */}
-            {activeView === "simulation" && (
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div className="lg:col-span-2">
-                  <DigitalTwinSimulation />
-                </div>
-                <div>
-                  <PredictiveSimulation />
-                </div>
-              </div>
-            )}
-
             {/* ── Full-page Views ─────────────────────────────────── */}
+            {/* ADDED: Digital Twin Route */}
+            {activeView === "simulation" && <DigitalTwinSimulation />}
+            
             {activeView === "compliance" && <StatutoryView />}
             {activeView === "anomaly" && <AnomalyView />}
             {activeView === "nlp" && <NLPView />}
