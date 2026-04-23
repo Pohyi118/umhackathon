@@ -15,6 +15,7 @@ export default function PredictiveSimulation() {
   const [proposedHires, setProposedHires] = useState(1);
   const [avgSalary, setAvgSalary] = useState(5000);
   const [department, setDepartment] = useState('sales');
+  const [projectedRevenueLift, setProjectedRevenueLift] = useState(20);
   const [simulationResult, setSimulationResult] = useState(null);
   const [isSimulating, setIsSimulating] = useState(false);
 
@@ -30,16 +31,23 @@ export default function PredictiveSimulation() {
     setTimeout(() => {
       const totalSalary = proposedHires * avgSalary;
       const dept = departments.find(d => d.value === department);
-      const projectedRevenue = totalSalary * (dept?.multiplier || 2.2);
+      const baselineRevenue = totalSalary * (dept?.multiplier || 2.2);
+      const projectedRevenue = baselineRevenue * (1 + projectedRevenueLift / 100);
       const epfCost = totalSalary * 0.13;
       const socsoCost = Math.min(totalSalary, 6000 * proposedHires) * 0.0175;
       const eisCost = Math.min(totalSalary, 6000 * proposedHires) * 0.002;
+      const totalLaborCost = totalSalary + epfCost + socsoCost + eisCost;
+      const monthlyNetGain = Math.max(1, projectedRevenue - totalLaborCost);
+      const breakEvenMonths = (totalLaborCost / monthlyNetGain).toFixed(1);
 
       setSimulationResult({
         projectedRevenue,
-        totalLaborCost: totalSalary + epfCost + socsoCost + eisCost,
+        baselineRevenue,
+        totalLaborCost,
         statutoryCost: epfCost + socsoCost + eisCost,
         roi: ((projectedRevenue - totalSalary) / totalSalary * 100).toFixed(0),
+        breakEvenMonths,
+        projectedRevenueLift,
         confidenceScore: Math.round(75 + Math.random() * 15),
       });
       setIsSimulating(false);
@@ -120,6 +128,26 @@ export default function PredictiveSimulation() {
           </div>
         </div>
 
+        {/* Projected Revenue Impact Slider */}
+        <div>
+          <div className="flex items-center justify-between mb-1.5">
+            <label className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider">
+              Projected Revenue Impact
+            </label>
+            <span className="text-sm font-bold text-emerald-400">+{projectedRevenueLift}%</span>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="60"
+            step="5"
+            value={projectedRevenueLift}
+            onChange={(e) => setProjectedRevenueLift(parseInt(e.target.value))}
+            className="w-full h-1.5 rounded-full appearance-none cursor-pointer"
+            style={{ background: `linear-gradient(to right, #10B981 0%, #10B981 ${(projectedRevenueLift / 60) * 100}%, var(--bg-elevated) ${(projectedRevenueLift / 60) * 100}%, var(--bg-elevated) 100%)` }}
+          />
+        </div>
+
         {/* Simulate Button */}
         <button
           onClick={handleSimulate}
@@ -177,6 +205,30 @@ export default function PredictiveSimulation() {
                 </p>
               </div>
             </div>
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <div>
+                <p className="text-[9px] text-[var(--text-muted)] uppercase">Revenue Lift</p>
+                <p className="text-xs font-bold text-emerald-400">
+                  +{simulationResult.projectedRevenueLift}%
+                </p>
+              </div>
+              <div>
+                <p className="text-[9px] text-[var(--text-muted)] uppercase">Break-even Timeline</p>
+                <p className="text-xs font-bold text-[var(--text-primary)]">
+                  {simulationResult.breakEvenMonths} months
+                </p>
+              </div>
+            </div>
+            {department === "sales" && (
+              <div className="p-2.5 rounded-lg mb-3 bg-amber-500/5 border border-amber-500/20">
+                <p className="text-[10px] text-amber-400 font-semibold">
+                  Pipeline-Labor Alert
+                </p>
+                <p className="text-[10px] text-[var(--text-secondary)] mt-0.5 leading-relaxed">
+                  RM 500k pipeline with limited active reps. Adding {proposedHires} sales hire(s) may accelerate closure by ~20%.
+                </p>
+              </div>
+            )}
             <div className="flex items-center gap-2">
               <div className="h-1 flex-1 bg-[var(--bg-elevated)] rounded-full overflow-hidden">
                 <div className="h-full rounded-full bg-emerald-400" style={{ width: `${simulationResult.confidenceScore}%` }} />

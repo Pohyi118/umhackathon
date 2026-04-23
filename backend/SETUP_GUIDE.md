@@ -70,6 +70,7 @@ Navigate your browser to: **http://localhost:8000/docs**
 Key endpoints to test:
 - **`GET /api/v1/dashboard/overview`**: Returns the complete payload for the dashboard (Finance, Headcount, Team Energy).
 - **`POST /api/v1/ai/simulate`**: Tests the Ensemble Forecasting model.
+- **`POST /api/v1/ai/simulate-cuti-peristiwa`**: Simulates sudden public holiday shock (Cuti Peristiwa) and recommends whether to close warehouse or pay PH penalty rates.
 - **`POST /api/v1/ai/onboarding/suggest-package`**: Tests the ILMU-GLM-5.1 semantic onboarding.
 
 ## Step 5: (Optional) Running the Batch Pipeline

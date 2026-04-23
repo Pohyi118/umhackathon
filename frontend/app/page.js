@@ -19,17 +19,12 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import DashboardHeader from "./components/DashboardHeader";
+import Overview from "./components/Overview";
+import { NavigationProvider } from "./context/NavigationContext";
 
 // Dashboard cards
-import FinanceCard from "./components/FinanceCard";
-import HeadcountCard from "./components/HeadcountCard";
-import AttendanceHeatmap from "./components/AttendanceHeatmap";
-import TeamEnergyCard from "./components/TeamEnergyCard";
-import DepartmentSplitCard from "./components/DepartmentSplitCard";
-import PipelineActivityCard from "./components/PipelineActivityCard";
 import DigitalTwinSimulation from "./components/DigitalTwinSimulation";
 import PredictiveSimulation from "./components/PredictiveSimulation";
-import CostProductivityMatrix from "./components/CostProductivityMatrix";
 
 // Full-page views
 import StatutoryView from "./components/StatutoryView";
@@ -87,101 +82,32 @@ export default function AppShell() {
             </p>
           </div>
 
-          {/* ── Dashboard View ──────────────────────────────────── */}
-          {activeView === "dashboard" && (
-            <div className="space-y-5">
-              {/* Row 1: Finance + Headcount */}
+          <NavigationProvider setActiveView={setActiveView}>
+            {/* ── Dashboard View ──────────────────────────────────── */}
+            {activeView === "dashboard" && (
+              <Overview />
+            )}
+
+            {/* ── Simulation View ─────────────────────────────────── */}
+            {activeView === "simulation" && (
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div className="lg:col-span-2 animate-fadeInUp stagger-1" style={{ opacity: 0 }}>
-                  <FinanceCard />
+                <div className="lg:col-span-2">
+                  <DigitalTwinSimulation />
                 </div>
-                <div className="animate-fadeInUp stagger-2" style={{ opacity: 0 }}>
-                  <HeadcountCard />
+                <div>
+                  <PredictiveSimulation />
                 </div>
               </div>
+            )}
 
-              {/* Row 2: Attendance + Energy + Department */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div className="animate-fadeInUp stagger-3" style={{ opacity: 0 }}>
-                  <AttendanceHeatmap />
-                </div>
-                <div className="animate-fadeInUp stagger-4" style={{ opacity: 0 }}>
-                  <TeamEnergyCard />
-                </div>
-                <div className="animate-fadeInUp stagger-5" style={{ opacity: 0 }}>
-                  <DepartmentSplitCard />
-                </div>
-              </div>
-
-              {/* Row 3: Cost-Productivity + Pipeline */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                <div className="lg:col-span-2 animate-fadeInUp stagger-6" style={{ opacity: 0 }}>
-                  <CostProductivityMatrix />
-                </div>
-                <div className="animate-fadeInUp stagger-6" style={{ opacity: 0 }}>
-                  <PipelineActivityCard />
-                </div>
-              </div>
-
-              {/* Row 4: AI Insight Card */}
-              <div className="animate-fadeInUp stagger-6" style={{ opacity: 0 }}>
-                <div className="card p-5 relative overflow-hidden">
-                  <div
-                    className="absolute -top-12 -right-12 w-32 h-32 rounded-full blur-3xl pointer-events-none"
-                    style={{ background: "rgba(124, 58, 237, 0.15)" }}
-                  />
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-7 h-7 rounded-lg flex items-center justify-center"
-                      style={{ background: "linear-gradient(135deg, #7C3AED, #A78BFA)" }}>
-                      <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-xs font-medium uppercase tracking-wider text-[var(--text-secondary)]">
-                      AI Insight
-                    </h3>
-                    <span className="ml-auto px-1.5 py-0.5 rounded text-[9px] font-bold bg-[var(--primary)]/10 text-[var(--primary-light)]">
-                      NEW
-                    </span>
-                  </div>
-                  <p className="text-sm text-[var(--text-primary)] leading-relaxed mb-3">
-                    Last quarter, your <span className="text-[var(--primary-light)] font-semibold">tech hires generated 3.2x ROI</span> within 90 days.
-                  </p>
-                  <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
-                    Conversely, operational admin costs are{" "}
-                    <span className="text-amber-400 font-semibold">40% above industry benchmarks</span>.
-                    Consider automation for data-entry roles.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <div className="h-1 flex-1 bg-[var(--bg-elevated)] rounded-full overflow-hidden">
-                      <div className="h-full rounded-full bg-emerald-400" style={{ width: "87%" }} />
-                    </div>
-                    <span className="text-[10px] text-emerald-400 font-semibold">87% confidence</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* ── Simulation View ─────────────────────────────────── */}
-          {activeView === "simulation" && (
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-              <div className="lg:col-span-2">
-                <DigitalTwinSimulation />
-              </div>
-              <div>
-                <PredictiveSimulation />
-              </div>
-            </div>
-          )}
-
-          {/* ── Full-page Views ─────────────────────────────────── */}
-          {activeView === "compliance" && <StatutoryView />}
-          {activeView === "anomaly" && <AnomalyView />}
-          {activeView === "nlp" && <NLPView />}
-          {activeView === "blockchain" && <BlockchainView />}
-          {activeView === "onboarding" && <OnboardingView />}
-          {activeView === "settings" && <SettingsView />}
+            {/* ── Full-page Views ─────────────────────────────────── */}
+            {activeView === "compliance" && <StatutoryView />}
+            {activeView === "anomaly" && <AnomalyView />}
+            {activeView === "nlp" && <NLPView />}
+            {activeView === "blockchain" && <BlockchainView />}
+            {activeView === "onboarding" && <OnboardingView />}
+            {activeView === "settings" && <SettingsView />}
+          </NavigationProvider>
         </main>
 
         {/* Footer */}

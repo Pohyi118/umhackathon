@@ -47,7 +47,7 @@ export default function DashboardHeader() {
           </div>
           <input
             type="text"
-            placeholder="Search employees, departments, reports..."
+            placeholder="Ask the Data: Why is labor cost high this month?"
             className="w-full h-9 pl-9 pr-4 rounded-lg text-sm bg-[var(--bg-input)] text-[var(--text-primary)] 
                        placeholder:text-[var(--text-muted)] border border-[var(--border)] 
                        focus:border-[var(--border-focus)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)]/30

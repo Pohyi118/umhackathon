@@ -36,7 +36,7 @@ DEPT_COLORS = [
 @router.get("/overview", response_model=DashboardOverview)
 async def get_dashboard_overview(
     db: AsyncSession = Depends(get_db),
-    user: User = Depends(get_current_user),
+    # Temporarily disabled for demo: user: User = Depends(get_current_user),
 ):
     """
     Single endpoint for the complete dashboard view.

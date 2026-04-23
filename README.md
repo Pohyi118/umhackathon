@@ -96,6 +96,26 @@ Once the backend is running, visit:
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
 
+### New AI Endpoint: Cuti Peristiwa Shock
+
+Simulate sudden public holiday operational risk during peak demand:
+
+- `POST /api/v1/ai/simulate-cuti-peristiwa`
+- Purpose: Compare statutory Public Holiday wage penalty vs estimated SLA impact from warehouse shutdown.
+
+Example request body:
+
+```json
+{
+  "max_daily_demand_units": 18000,
+  "daily_capacity_units": 12000,
+  "logistics_staff_count": 8,
+  "ordinary_rate_of_pay_rm": 115.38,
+  "profit_per_item_rm": 5,
+  "post_holiday_surge_percent": 0.2
+}
+```
+
 ## Features
 
 - **Dashboard**: Real-time HR metrics and KPIs

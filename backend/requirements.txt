@@ -10,6 +10,7 @@ python-jose[cryptography]>=3.3.0
 passlib[bcrypt]>=1.7.4
 python-dotenv>=1.0.1
 python-multipart>=0.0.12
+requests>=2.32.0
 
 # ML Stack
 scikit-learn>=1.5.0

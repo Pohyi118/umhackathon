@@ -1,9 +1,10 @@
 'use client';
 
 /**
- * PeopleGraph — Statutory Compliance Engine View
- * ================================================
+ * PeopleGraph — Statutory Compliance Engine View (Enhanced)
+ * ==========================================================
  * Interactive compliance calculator with EA1955, EPF, SOCSO, EIS, PCB.
+ * Now includes massive bold "Total Employer Burden: X%" metric.
  */
 
 import { useState } from 'react';
@@ -35,6 +36,7 @@ export default function StatutoryView() {
   const eisEmployee = eisCap * statutoryRates.eis_rate;
   const totalEmployerCost = salary + epfEmployer + socsoEmployer + eisEmployer;
   const netTakeHome = salary - epfEmployee - socsoEmployee - eisEmployee;
+  const employerBurdenPercent = ((totalEmployerCost - salary) / salary * 100).toFixed(1);
 
   // EA1955 Severance calculation
   const severanceDaysPerYear = tenure < 2 ? 10 : tenure < 5 ? 15 : 20;
@@ -54,6 +56,46 @@ export default function StatutoryView() {
           <h2 className="text-lg font-bold text-[var(--text-primary)]">Statutory Cost Calculator</h2>
         </div>
         <p className="text-xs text-[var(--text-muted)] mb-6">True cost of employment under Malaysian law (EA1955, EPF Act 1991, SOCSO Act 1969)</p>
+
+        {/* ── EMPLOYER BURDEN HERO ────────────────────────────────── */}
+        <div className="mb-6 p-5 rounded-xl relative overflow-hidden" style={{
+          background: 'linear-gradient(135deg, rgba(124,58,237,0.08), rgba(245,158,11,0.06))',
+          border: '1px solid rgba(124,58,237,0.15)',
+        }}>
+          <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full blur-3xl pointer-events-none"
+            style={{ background: 'rgba(124,58,237,0.08)' }} />
+          <p className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mb-1">Total Employer Burden</p>
+          <div className="flex items-baseline gap-2">
+            <span className="text-5xl font-black text-[var(--text-primary)]" style={{ letterSpacing: '-0.02em' }}>
+              {employerBurdenPercent}%
+            </span>
+            <span className="text-sm text-[var(--text-muted)]">on top of base salary</span>
+          </div>
+          <p className="text-xs text-[var(--text-secondary)] mt-2">
+            For every <span className="font-bold text-[var(--primary-light)]">RM 1.00</span> you pay in salary, you actually spend{' '}
+            <span className="font-bold text-amber-400">RM {(totalEmployerCost / salary).toFixed(2)}</span>
+          </p>
+          <div className="mt-3 h-3 bg-[var(--bg-elevated)] rounded-full overflow-hidden flex">
+            <div className="h-full bg-[var(--primary)]" style={{ width: `${(salary / totalEmployerCost) * 100}%` }} title="Base Salary" />
+            <div className="h-full bg-[#A78BFA]" style={{ width: `${(epfEmployer / totalEmployerCost) * 100}%` }} title="EPF" />
+            <div className="h-full bg-[#C4B5FD]" style={{ width: `${(socsoEmployer / totalEmployerCost) * 100}%` }} title="SOCSO" />
+            <div className="h-full bg-[#DDD6FE]" style={{ width: `${(eisEmployer / totalEmployerCost) * 100}%` }} title="EIS" />
+          </div>
+          <div className="flex justify-between mt-1.5">
+            <span className="text-[9px] text-[var(--text-muted)] flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--primary)]" /> Base
+            </span>
+            <span className="text-[9px] text-[var(--text-muted)] flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A78BFA]" /> EPF
+            </span>
+            <span className="text-[9px] text-[var(--text-muted)] flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C4B5FD]" /> SOCSO
+            </span>
+            <span className="text-[9px] text-[var(--text-muted)] flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#DDD6FE]" /> EIS
+            </span>
+          </div>
+        </div>
 
         {/* Salary Input */}
         <div className="mb-5">

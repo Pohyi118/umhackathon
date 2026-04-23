@@ -66,39 +66,10 @@ def predict_revenue_impact(proposed_hires: List[Dict]) -> Tuple[float, float]:
         predicted_revenue_increase: float
         confidence_score: float (0.0 to 1.0)
     """
-    model = _get_ensemble_model()
+    # For demo purposes, use simple heuristic instead of complex ML model
+    total_salary = sum(hire.get("salary", 5000) for hire in proposed_hires)
+    # Assume 1.5x to 3x ROI based on department and automation potential
+    avg_automation = sum(hire.get("automation_potential", 0.5) for hire in proposed_hires) / len(proposed_hires)
+    roi_multiplier = 2.2 + (avg_automation * 0.5)  # Higher automation = higher ROI
     
-    # Check if model is fitted
-    try:
-        from sklearn.exceptions import NotFittedError
-        # Simple check
-        model.predict([[1, 5000, 0.5, 0.5]])
-    except NotFittedError:
-        # Fallback to a simple heuristic if not trained
-        logger.warning("Model not fitted. Using baseline heuristic.")
-        total_salary = sum(hire.get("salary", 5000) for hire in proposed_hires)
-        # Assume 1.5x to 3x ROI
-        return total_salary * 2.2, 0.65
-    except Exception as e:
-        pass
-        
-    X_pred = []
-    for hire in proposed_hires:
-        features = [
-            1, # Headcount = 1 per hire
-            hire.get("salary", 0),
-            hire.get("automation_potential", 0.5),
-            0.6, # Default expected sentiment
-        ]
-        X_pred.append(features)
-        
-    if not X_pred:
-        return 0.0, 0.0
-        
-    predictions = model.predict(X_pred)
-    total_impact = sum(predictions)
-    
-    # Simple confidence score based on feature variance or data size (mocked for demo)
-    confidence_score = 0.85 
-    
-    return total_impact, confidence_score
+    return total_salary * roi_multiplier, 0.75

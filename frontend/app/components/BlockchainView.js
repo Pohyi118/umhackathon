@@ -1,208 +1,159 @@
 'use client';
 
 /**
- * PeopleGraph — Blockchain Escrow Ledger View
+ * PeopleGraph — Freelance & Temp Escrow Ledger
  * ==============================================
- * Polygon L2 gig-worker payment escrow and payroll audit trail.
+ * Smart contract milestone payments for flexible workforce.
  */
 
 import { useState } from 'react';
 
 const mockContracts = [
-  { id: '0x7a3f...e291', worker: 'Amir (Freelance Driver)', amount: 2500, status: 'escrowed', milestone: 'Delivery batch #47 — 120 units', created: '2024-03-15', expires: '2024-03-22' },
-  { id: '0x9c1b...4f83', worker: 'Priya (Temp Packer)', amount: 1800, status: 'released', milestone: 'Raya prep packing — 500 boxes', created: '2024-03-10', expires: '2024-03-17', completedAt: '2024-03-16' },
-  { id: '0x2e8d...a7c0', worker: 'Jason (IT Contractor)', amount: 5000, status: 'escrowed', milestone: 'POS system migration Phase 1', created: '2024-03-12', expires: '2024-04-12' },
-  { id: '0x5f4a...1b2e', worker: 'Fatimah (CNY Temp Staff)', amount: 1500, status: 'disputed', milestone: 'CNY counter sales — 2 weeks', created: '2024-02-01', expires: '2024-02-15' },
-];
-
-const mockAuditTrail = [
-  { hash: '0xabc123...def', action: 'Payroll PDF Hash Stored', date: '2024-03-25', block: 54321098, verified: true },
-  { hash: '0x789fed...456', action: 'EPF Remittance Proof', date: '2024-03-20', block: 54318765, verified: true },
-  { hash: '0x321abc...789', action: 'SOCSO Filing Hash', date: '2024-03-18', block: 54316432, verified: true },
+  {
+    id: 'ESC-1042',
+    worker: 'Sarah Wong (Graphic Designer)',
+    amount: 3000,
+    status: 'escrowed',
+    milestone: 'Deliver Q4 Marketing Assets (Drafts)',
+    created: '2024-03-15',
+    expires: '2024-03-22',
+  },
+  {
+    id: 'ESC-1043',
+    worker: 'Agensi Pekerjaan Boleh (Raya Temp Packers - 2 Pax)',
+    amount: 3600,
+    status: 'escrowed',
+    milestone: '14 Days Warehouse Fulfillment',
+    created: '2024-03-12',
+    expires: '2024-03-26',
+  },
+  {
+    id: 'ESC-1044',
+    worker: 'Jason Lee (IT Contractor)',
+    amount: 5000,
+    status: 'released',
+    milestone: 'POS System Migration',
+    created: '2024-03-10',
+    expires: '2024-04-10',
+    completedAt: '2024-03-20',
+  },
 ];
 
 export default function BlockchainView() {
-  const [activeTab, setActiveTab] = useState('escrow');
-  const [showNewContract, setShowNewContract] = useState(false);
-  const [newContract, setNewContract] = useState({ worker: '', amount: '', milestone: '', duration: '7' });
+  const [searchTerm, setSearchTerm] = useState('');
 
   const statusConfig = {
-    escrowed: { bg: 'bg-amber-500/10', text: 'text-amber-400', label: 'Escrowed' },
-    released: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', label: 'Released' },
-    disputed: { bg: 'bg-red-500/10', text: 'text-red-400', label: 'Disputed' },
+    escrowed: { bg: 'bg-amber-500/10', text: 'text-amber-400', label: 'ESCROWED' },
+    released: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', label: 'RELEASED' },
+    disputed: { bg: 'bg-red-500/10', text: 'text-red-400', label: 'DISPUTED' },
   };
 
   const totalEscrowed = mockContracts.filter(c => c.status === 'escrowed').reduce((s, c) => s + c.amount, 0);
-  const totalReleased = mockContracts.filter(c => c.status === 'released').reduce((s, c) => s + c.amount, 0);
+  const activeContracts = mockContracts.filter(c => c.status === 'escrowed').length;
+
+  const filteredContracts = mockContracts.filter(contract =>
+    contract.worker.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    contract.milestone.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <div className="max-w-4xl mx-auto space-y-5">
-      {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <div className="card p-4">
-          <p className="text-[9px] text-[var(--text-muted)] uppercase tracking-wider">Active Escrow</p>
-          <p className="text-2xl font-bold text-amber-400 mt-1">RM {totalEscrowed.toLocaleString()}</p>
-          <p className="text-[10px] text-[var(--text-muted)]">{mockContracts.filter(c => c.status === 'escrowed').length} contracts</p>
+    <div className="max-w-4xl mx-auto space-y-6">
+      {/* Page Header */}
+      <div className="text-center space-y-2">
+        <h1 className="text-3xl font-bold text-white">Freelance & Temp Escrow Ledger</h1>
+        <p className="text-slate-400">Smart contract milestone payments for flexible workforce</p>
+      </div>
+
+      {/* KPI Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <p className="text-xs text-slate-400 uppercase tracking-wider">TOTAL FUNDS ESCROWED</p>
+          <p className="text-3xl font-bold text-white mt-2">RM {totalEscrowed.toLocaleString()}</p>
         </div>
-        <div className="card p-4">
-          <p className="text-[9px] text-[var(--text-muted)] uppercase tracking-wider">Released</p>
-          <p className="text-2xl font-bold text-emerald-400 mt-1">RM {totalReleased.toLocaleString()}</p>
-          <p className="text-[10px] text-[var(--text-muted)]">{mockContracts.filter(c => c.status === 'released').length} completed</p>
+        <div className="bg-white/5 border border-white/10 rounded-xl p-6 relative">
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/10 to-purple-600/10"></div>
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 to-purple-600 rounded-t-xl"></div>
+          <p className="text-xs text-slate-400 uppercase tracking-wider">OVERHEAD SAVED (YTD)</p>
+          <p className="text-3xl font-bold text-white mt-2">RM 15,000</p>
+          <p className="text-xs text-slate-400 mt-1">Vs. full-time equivalent payroll</p>
         </div>
-        <div className="card p-4">
-          <p className="text-[9px] text-[var(--text-muted)] uppercase tracking-wider">Network</p>
-          <p className="text-lg font-bold text-[var(--primary-light)] mt-1">Polygon L2</p>
-          <p className="text-[10px] text-emerald-400 flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />Connected
-          </p>
+        <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+          <p className="text-xs text-slate-400 uppercase tracking-wider">ACTIVE CONTRACTS</p>
+          <p className="text-3xl font-bold text-white mt-2">{activeContracts}</p>
         </div>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="card p-1 flex gap-1">
-        {[
-          { id: 'escrow', label: 'Gig Worker Escrow' },
-          { id: 'audit', label: 'Payroll Audit Trail' },
-        ].map(tab => (
-          <button key={tab.id} onClick={() => setActiveTab(tab.id)}
-            className={`flex-1 py-2 rounded-lg text-xs font-semibold transition-all duration-200 ${
-              activeTab === tab.id
-                ? 'bg-[var(--primary)] text-white'
-                : 'text-[var(--text-muted)] hover:text-[var(--text-secondary)] hover:bg-[var(--bg-elevated)]'
-            }`}>
-            {tab.label}
-          </button>
-        ))}
+      {/* Header Actions */}
+      <div className="flex items-center gap-4">
+        <div className="flex-1">
+          <input
+            type="text"
+            placeholder="Search contracts..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-3 rounded-xl text-sm bg-slate-700 text-white placeholder-slate-400 border border-slate-600 focus:border-purple-500 focus:outline-none"
+          />
+        </div>
+        <button className="px-6 py-3 rounded-xl text-sm font-semibold text-white bg-[#8B5CF6] hover:bg-[#7C3AED] transition-colors">
+          + Create Escrow Contract
+        </button>
       </div>
 
-      {/* Escrow Tab */}
-      {activeTab === 'escrow' && (
-        <div className="space-y-3">
-          {/* New Contract Button */}
-          <button onClick={() => setShowNewContract(!showNewContract)}
-            className="w-full py-2.5 rounded-xl text-xs font-semibold border-2 border-dashed border-[var(--border)]
-                       text-[var(--text-muted)] hover:border-[var(--primary)] hover:text-[var(--primary-light)]
-                       transition-all duration-200 flex items-center justify-center gap-2">
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-            </svg>
-            Create New Escrow Contract
-          </button>
-
-          {/* New Contract Form */}
-          {showNewContract && (
-            <div className="card p-5 space-y-3 animate-fadeInUp" style={{ opacity: 1 }}>
-              <h3 className="text-sm font-bold text-[var(--text-primary)]">New Smart Contract</h3>
-              <div className="grid grid-cols-2 gap-3">
+      {/* Contract List */}
+      <div className="space-y-4">
+        {filteredContracts.map(contract => {
+          const cfg = statusConfig[contract.status];
+          return (
+            <div key={contract.id} className="bg-white/5 border border-white/10 rounded-xl p-6">
+              {/* Card Header */}
+              <div className="flex items-start justify-between mb-4">
                 <div>
-                  <label className="block text-[10px] text-[var(--text-muted)] uppercase tracking-wider mb-1">Worker Name</label>
-                  <input type="text" value={newContract.worker}
-                    onChange={(e) => setNewContract(p => ({ ...p, worker: e.target.value }))}
-                    placeholder="e.g. Ali (Freelance)"
-                    className="w-full h-9 px-3 rounded-lg text-xs bg-[var(--bg-input)] text-[var(--text-primary)]
-                               placeholder:text-[var(--text-muted)] border border-[var(--border)] focus:border-[var(--border-focus)] focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-[10px] text-[var(--text-muted)] uppercase tracking-wider mb-1">Amount (RM)</label>
-                  <input type="number" value={newContract.amount}
-                    onChange={(e) => setNewContract(p => ({ ...p, amount: e.target.value }))}
-                    placeholder="e.g. 2000"
-                    className="w-full h-9 px-3 rounded-lg text-xs bg-[var(--bg-input)] text-[var(--text-primary)]
-                               placeholder:text-[var(--text-muted)] border border-[var(--border)] focus:border-[var(--border-focus)] focus:outline-none" />
-                </div>
-              </div>
-              <div>
-                <label className="block text-[10px] text-[var(--text-muted)] uppercase tracking-wider mb-1">Milestone Description</label>
-                <input type="text" value={newContract.milestone}
-                  onChange={(e) => setNewContract(p => ({ ...p, milestone: e.target.value }))}
-                  placeholder="e.g. Deliver 200 units to Klang depot"
-                  className="w-full h-9 px-3 rounded-lg text-xs bg-[var(--bg-input)] text-[var(--text-primary)]
-                             placeholder:text-[var(--text-muted)] border border-[var(--border)] focus:border-[var(--border-focus)] focus:outline-none" />
-              </div>
-              <button className="w-full py-2 rounded-xl text-xs font-semibold text-white"
-                style={{ background: 'linear-gradient(135deg, var(--primary), var(--primary-dark))' }}>
-                Deploy to Polygon
-              </button>
-            </div>
-          )}
-
-          {/* Existing Contracts */}
-          {mockContracts.map(contract => {
-            const cfg = statusConfig[contract.status];
-            return (
-              <div key={contract.id} className="card p-4">
-                <div className="flex items-start justify-between mb-2">
-                  <div>
-                    <p className="text-xs font-semibold text-[var(--text-primary)]">{contract.worker}</p>
-                    <p className="text-[10px] text-[var(--text-muted)] font-mono mt-0.5">{contract.id}</p>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-bold text-[var(--text-primary)]">RM {contract.amount.toLocaleString()}</span>
-                    <span className={`px-2 py-0.5 rounded text-[9px] font-bold uppercase ${cfg.bg} ${cfg.text}`}>{cfg.label}</span>
-                  </div>
-                </div>
-                <div className="p-2.5 rounded-lg" style={{ background: 'var(--bg-elevated)' }}>
-                  <p className="text-[10px] text-[var(--text-secondary)]">
-                    <span className="text-[var(--text-muted)]">Milestone:</span> {contract.milestone}
-                  </p>
-                  <div className="flex items-center gap-4 mt-1.5">
-                    <p className="text-[9px] text-[var(--text-muted)]">Created: {contract.created}</p>
-                    <p className="text-[9px] text-[var(--text-muted)]">Expires: {contract.expires}</p>
-                    {contract.completedAt && <p className="text-[9px] text-emerald-400">Completed: {contract.completedAt}</p>}
-                  </div>
-                </div>
-                {contract.status === 'escrowed' && (
-                  <div className="flex gap-2 mt-3">
-                    <button className="flex-1 py-1.5 rounded-lg text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-colors">
-                      Release Funds
-                    </button>
-                    <button className="flex-1 py-1.5 rounded-lg text-[10px] font-semibold bg-red-500/10 text-red-400 hover:bg-red-500/20 transition-colors">
-                      Dispute
-                    </button>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Audit Trail Tab */}
-      {activeTab === 'audit' && (
-        <div className="card p-5">
-          <h3 className="text-sm font-bold text-[var(--text-primary)] mb-4">Tamper-Proof Payroll Audit Trail</h3>
-          <p className="text-xs text-[var(--text-muted)] mb-4">
-            Every payroll run, EPF remittance, and SOCSO filing is hashed and stored on Polygon for tamper-proof verification.
-          </p>
-          <div className="space-y-2">
-            {mockAuditTrail.map((entry, i) => (
-              <div key={i} className="flex items-center justify-between p-3 rounded-lg" style={{ background: 'var(--bg-elevated)' }}>
-                <div className="flex items-center gap-3">
-                  {entry.verified ? (
-                    <div className="w-6 h-6 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                      <svg className="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                  ) : (
-                    <div className="w-6 h-6 rounded-full bg-amber-500/10 flex items-center justify-center">
-                      <span className="text-amber-400 text-xs">?</span>
-                    </div>
-                  )}
-                  <div>
-                    <p className="text-xs font-semibold text-[var(--text-primary)]">{entry.action}</p>
-                    <p className="text-[10px] text-[var(--text-muted)] font-mono">{entry.hash}</p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-white">{contract.worker}</h3>
+                  <p className="text-sm text-slate-400">Smart Contract: #{contract.id}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-[10px] text-[var(--text-secondary)]">{entry.date}</p>
-                  <p className="text-[9px] text-[var(--text-muted)]">Block #{entry.block.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-white">RM {contract.amount.toLocaleString()}</p>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold uppercase ${cfg.bg} ${cfg.text} border border-current`}>
+                    {cfg.label}
+                  </span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      )}
+
+              {/* Milestone Section */}
+              <div className="bg-slate-800/50 rounded-lg p-4 mb-4">
+                <p className="text-sm text-slate-300 mb-2">
+                  <span className="font-semibold text-white">Milestone:</span> {contract.milestone}
+                </p>
+                <div className="flex items-center gap-4 text-xs text-slate-400">
+                  <span>Created: {contract.created}</span>
+                  <span>Expires: {contract.expires}</span>
+                  {contract.completedAt && <span className="text-emerald-400">Completed: {contract.completedAt}</span>}
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              {contract.status === 'escrowed' && (
+                <div className="flex gap-3">
+                  <button className="flex-1 py-2 rounded-lg text-sm font-semibold border border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 transition-colors">
+                    Release Funds
+                  </button>
+                  <button className="flex-1 py-2 rounded-lg text-sm font-semibold border border-red-500 text-red-400 hover:bg-red-500/10 transition-colors">
+                    Dispute
+                  </button>
+                </div>
+              )}
+              {contract.status === 'released' && (
+                <div className="flex items-center justify-center gap-2 py-2">
+                  <svg className="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm font-semibold text-emerald-400">Funds Cleared</span>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
