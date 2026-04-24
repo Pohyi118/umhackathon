@@ -7,6 +7,7 @@
  */
 
 import { useState } from 'react';
+import StrategicInsightPanel from './StrategicInsightPanel';
 
 const statutoryRates = {
   epf_employee: 0.11,
@@ -195,6 +196,12 @@ export default function StatutoryView() {
           </div>
         </div>
       </div>
+
+      {/* Strategic Insight Panel */}
+      <StrategicInsightPanel 
+        baseSalary={salary} 
+        trueCost={totalCashOutflow} 
+      />
 
       {/* Upcoming Regulatory Trends */}
       <div className="card p-6 rounded-[2rem] border border-[var(--border)] bg-[var(--bg-card)]">
