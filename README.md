@@ -1,6 +1,6 @@
 # PeopleGraph
 
-An AI-powered HR analytics platform with predictive modeling, sentiment analysis, anomaly detection, and compliance features.
+An On-Demand Skill-to-Revenue Orchestrator and AI decision engine for Malaysian SMEs, featuring a Force-Directed Value Graph, predictive modeling, unstructured data ingestion, and compliance features.
 
 ## Prerequisites
 
@@ -118,14 +118,14 @@ Example request body:
 
 ## Features
 
-- **Dashboard**: Real-time HR metrics and KPIs
-- **Employees**: Employee management with performance tracking
-- **AI Analytics**: Predictive models and sentiment analysis
-- **Anomaly Detection**: Identify unusual patterns in HR data
-- **Blockchain**: Immutable audit trails
-- **NLP**: Natural language processing for employee feedback
-- **Compliance**: Statutory compliance tracking and reporting
-- **Predictive Simulation**: Workforce planning simulations
+- **Value Graph (Digital Twin)**: Force-directed visualization mapping revenue directly to human activities using D3.js.
+- **Decision Intelligence**: Automated expansion, optimization, and outsourcing blueprints based on forensic data analysis.
+- **On-Demand Data Ingestion**: Analyzes unstructured data (WhatsApp logs, sales CSVs, payroll PDFs) to bypass manual KPI tracking.
+- **AI Analytics**: Predictive models for hiring and revenue impact using Ensemble Forecasting.
+- **NLP & Sentiment**: YTL AI Labs ILMU-GLM-5.1 integration for employee feedback analysis and SaaS onboarding suggestions.
+- **Cuti Peristiwa Shock Simulation**: Simulates public holiday operational risk and warehouse SLA impact.
+- **Dashboard**: Real-time HR metrics, 30-day attendance heatmaps, and team energy tracking.
+- **Compliance**: Automated statutory tracking (EPF/SOCSO/EIS/PCB) with strict formatting and fallback data logic.
 
 ## Tech Stack
 
