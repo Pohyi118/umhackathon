@@ -1,6 +1,8 @@
 # PeopleGraph
 
 An On-Demand Skill-to-Revenue Orchestrator and AI decision engine for Malaysian SMEs, featuring a Force-Directed Value Graph, predictive modeling, unstructured data ingestion, and compliance features.
+## Recorded Pitching Video
+https://drive.google.com/file/d/1GDIpl02ZSARlF4wh13Vv9ylmJIws4RLX/view?usp=drivesdk 
 
 ## Prerequisites
 
